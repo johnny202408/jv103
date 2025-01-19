@@ -48,7 +48,7 @@ class ElasticsearchSinkConnectorIntegrationTest {
         // Create test properties
         Properties testProperties = new Properties();
         testProperties.setProperty("kafka.bootstrap.servers", kafka.getBootstrapServers());
-        testProperties.setProperty("kafka.topic", "test-topic");
+        testProperties.setProperty("kafka.topic", "my-topic");
         testProperties.setProperty("elasticsearch.hosts", 
             elasticsearch.getHost() + ":" + elasticsearch.getMappedPort(9200));
         testProperties.setProperty("kafka.batch.size", "100");

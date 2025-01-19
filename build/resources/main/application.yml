@@ -11,7 +11,7 @@ spring:
       max-poll-records: 500
 
 kafka:
-  topic: example-topic
+  topic: my-topic
   batch:
     size: 100
     timeout-ms: 5000

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.kafkaconnect.config.AppConfigTest" tests="5" skipped="0" failures="2" errors="0" timestamp="2025-01-06T15:56:39" hostname="GS7329" time="0.924">
+<testsuite name="com.example.kafkaconnect.config.AppConfigTest" tests="5" skipped="0" failures="2" errors="0" timestamp="2025-01-19T11:39:13" hostname="GS7329" time="0.956">
   <properties/>
-  <testcase name="shouldThrowExceptionForMissingProperty()" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.135">
+  <testcase name="shouldThrowExceptionForMissingProperty()" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.362">
     <failure message="org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -95,8 +95,8 @@
 </failure>
   </testcase>
   <testcase name="shouldLoadPropertiesSuccessfully()" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.003"/>
-  <testcase name="shouldCreateKafkaConsumer()" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.313"/>
-  <testcase name="shouldThrowExceptionForInvalidIntegerProperty(Path)" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.032">
+  <testcase name="shouldCreateKafkaConsumer()" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.281"/>
+  <testcase name="shouldThrowExceptionForInvalidIntegerProperty(Path)" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.014">
     <failure message="org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be thrown, but nothing was thrown.
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at app//org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -189,8 +189,8 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldCreateElasticsearchClient()" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.433"/>
-  <system-out><![CDATA[17:56:40.163 [Test worker] INFO org.apache.kafka.clients.consumer.ConsumerConfig -- ConsumerConfig values: 
+  <testcase name="shouldCreateElasticsearchClient()" classname="com.example.kafkaconnect.config.AppConfigTest" time="0.288"/>
+  <system-out><![CDATA[13:39:14.012 [Test worker] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -284,11 +284,9 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
 
-17:56:40.175 [Test worker] DEBUG org.apache.kafka.clients.consumer.KafkaConsumer -- [Consumer clientId=consumer-elasticsearch-sink-group-1, groupId=elasticsearch-sink-group] Initializing the Kafka consumer
-17:56:40.419 [Test worker] INFO org.apache.kafka.common.utils.AppInfoParser -- Kafka version: 3.6.1
-17:56:40.421 [Test worker] INFO org.apache.kafka.common.utils.AppInfoParser -- Kafka commitId: 5e3c2b738d253ff5
-17:56:40.421 [Test worker] INFO org.apache.kafka.common.utils.AppInfoParser -- Kafka startTimeMs: 1736179000416
-17:56:40.424 [Test worker] DEBUG org.apache.kafka.clients.consumer.KafkaConsumer -- [Consumer clientId=consumer-elasticsearch-sink-group-1, groupId=elasticsearch-sink-group] Kafka consumer initialized
+13:39:14.244 [Test worker] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+13:39:14.246 [Test worker] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+13:39:14.246 [Test worker] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1737286754242
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

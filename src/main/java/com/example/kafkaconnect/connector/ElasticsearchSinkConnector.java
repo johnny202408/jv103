@@ -35,22 +35,43 @@ public class ElasticsearchSinkConnector {
     }
     
     public void processMessages(List<String> messages) {
+        if (messages == null || messages.isEmpty()) {
+            log.debug("No messages to process");
+            return;
+        }
+
         try {
             BulkRequest bulkRequest = new BulkRequest();
             
             for (String message : messages) {
-                JsonNode jsonNode = objectMapper.readTree(message);
-                String productType = jsonNode.get("ProductType").asText();
-                String indexName = "products-" + productType.toLowerCase();
-                
-                ensureIndexExists(indexName);
-                
-                bulkRequest.add(new IndexRequest(indexName)
-                    .source(message, XContentType.JSON));
-                
-                if (bulkRequest.numberOfActions() >= bulkActions) {
-                    executeBulkRequest(bulkRequest);
-                    bulkRequest = new BulkRequest();
+                try {
+                    JsonNode jsonNode = objectMapper.readTree(message);
+                    JsonNode productTypeNode = jsonNode.get("ProductType");
+                    
+                    if (productTypeNode == null || productTypeNode.isNull()) {
+                        log.warn("Skipping message without ProductType: {}", message);
+                        continue;
+                    }
+                    
+                    String productType = productTypeNode.asText();
+                    if (productType.isEmpty()) {
+                        log.warn("Skipping message with empty ProductType: {}", message);
+                        continue;
+                    }
+                    
+                    String indexName = "products-" + productType.toLowerCase();
+                    ensureIndexExists(indexName);
+                    
+                    bulkRequest.add(new IndexRequest(indexName)
+                        .source(message, XContentType.JSON));
+                    
+                    if (bulkRequest.numberOfActions() >= bulkActions) {
+                        executeBulkRequest(bulkRequest);
+                        bulkRequest = new BulkRequest();
+                    }
+                } catch (Exception e) {
+                    log.error("Error processing message: {}", message, e);
+                    // Continue processing other messages
                 }
             }
             

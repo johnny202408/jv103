@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" tests="8" skipped="0" failures="7" errors="0" timestamp="2025-01-06T15:56:40" hostname="GS7329" time="2.464">
+<testsuite name="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" tests="8" skipped="0" failures="7" errors="0" timestamp="2025-01-19T11:39:14" hostname="GS7329" time="2.239">
   <properties/>
-  <testcase name="shouldHandleBulkFailure()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="2.351">
+  <testcase name="shouldHandleBulkFailure()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="2.106">
     <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.shouldHandleBulkFailure(ElasticsearchSinkConnectorTest.java:107)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected.
 Clean &amp; maintainable test code requires zero unnecessary code.
@@ -81,7 +81,7 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldHandleInvalidJson()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.015">
+  <testcase name="shouldHandleInvalidJson()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.016">
     <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.setUp(ElasticsearchSinkConnectorTest.java:57)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected.
 Clean &amp; maintainable test code requires zero unnecessary code.
@@ -162,7 +162,7 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 </failure>
   </testcase>
   <testcase name="shouldHandleNullProductType()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.009"/>
-  <testcase name="shouldHandleMissingProductType()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.007">
+  <testcase name="shouldHandleMissingProductType()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.009">
     <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.setUp(ElasticsearchSinkConnectorTest.java:57)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected.
 Clean &amp; maintainable test code requires zero unnecessary code.
@@ -242,7 +242,7 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldHandleLargeBatch()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.043">
+  <testcase name="shouldHandleLargeBatch()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.052">
     <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.shouldHandleLargeBatch(ElasticsearchSinkConnectorTest.java:146)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected.
 Clean &amp; maintainable test code requires zero unnecessary code.
@@ -322,7 +322,7 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldProcessBatchSuccessfully()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.01">
+  <testcase name="shouldProcessBatchSuccessfully()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.015">
     <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.shouldProcessBatchSuccessfully(ElasticsearchSinkConnectorTest.java:67)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected.
 Clean &amp; maintainable test code requires zero unnecessary code.
@@ -402,7 +402,7 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldHandleEmptyBatch()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.003">
+  <testcase name="shouldHandleEmptyBatch()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.007">
     <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.setUp(ElasticsearchSinkConnectorTest.java:57)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected.
 Clean &amp; maintainable test code requires zero unnecessary code.
@@ -482,7 +482,7 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldCreateIndexIfNotExists()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.012">
+  <testcase name="shouldCreateIndexIfNotExists()" classname="com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest" time="0.009">
     <failure message="org.mockito.exceptions.misusing.UnnecessaryStubbingException: &#10;Unnecessary stubbings detected.&#10;Clean &amp; maintainable test code requires zero unnecessary code.&#10;Following stubbings are unnecessary (click to navigate to relevant line of code):&#10;  1. -&gt; at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.shouldCreateIndexIfNotExists(ElasticsearchSinkConnectorTest.java:88)&#10;Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class." type="org.mockito.exceptions.misusing.UnnecessaryStubbingException">org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected.
 Clean &amp; maintainable test code requires zero unnecessary code.
@@ -562,9 +562,9 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[17:56:43.232 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.246 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Bulk indexing has failures: Bulk indexing failed
-17:56:43.247 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+  <system-out><![CDATA[13:39:16.656 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.662 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Bulk indexing has failures: Bulk indexing failed
+13:39:16.663 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 java.lang.RuntimeException: Bulk indexing failed
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.executeBulkRequest(ElasticsearchSinkConnector.java:71)
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.processMessages(ElasticsearchSinkConnector.java:58)
@@ -657,7 +657,7 @@ java.lang.RuntimeException: Bulk indexing failed
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.293 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+13:39:16.709 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'invalid': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
  at [Source: (String)"invalid json"; line: 1, column: 8]
 	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2477)
@@ -757,8 +757,8 @@ com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'invalid': was
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.305 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-null
-17:56:43.306 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+13:39:16.721 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-null
+13:39:16.722 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 java.lang.NullPointerException: Cannot invoke "org.elasticsearch.action.bulk.BulkResponse.hasFailures()" because "bulkResponse" is null
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.executeBulkRequest(ElasticsearchSinkConnector.java:69)
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.processMessages(ElasticsearchSinkConnector.java:58)
@@ -851,7 +851,7 @@ java.lang.NullPointerException: Cannot invoke "org.elasticsearch.action.bulk.Bul
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.316 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+13:39:16.731 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.processMessages(ElasticsearchSinkConnector.java:43)
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.lambda$shouldHandleMissingProductType$2(ElasticsearchSinkConnectorTest.java:135)
@@ -943,21 +943,21 @@ java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.Js
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.329 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.333 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.337 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.340 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.343 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.346 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.348 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.350 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.351 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.352 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.353 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.367 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.368 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 2 documents
-17:56:43.387 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.388 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 1 documents
+13:39:16.749 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.753 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.757 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.761 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.764 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.767 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.770 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.773 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.775 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.777 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.778 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.798 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.799 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 2 documents
+13:39:16.823 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.823 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 1 documents
 ]]></system-out>
   <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 ]]></system-err>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.450s</div>
+<div class="counter">2.223s</div>
 <p>duration</p>
 </div>
 </td>
@@ -676,32 +676,32 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 </thead>
 <tr>
 <td class="failures">shouldCreateIndexIfNotExists()</td>
-<td class="failures">0.012s</td>
+<td class="failures">0.009s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">shouldHandleBulkFailure()</td>
-<td class="failures">2.351s</td>
+<td class="failures">2.106s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">shouldHandleEmptyBatch()</td>
-<td class="failures">0.003s</td>
+<td class="failures">0.007s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">shouldHandleInvalidJson()</td>
-<td class="failures">0.015s</td>
+<td class="failures">0.016s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">shouldHandleLargeBatch()</td>
-<td class="failures">0.043s</td>
+<td class="failures">0.052s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">shouldHandleMissingProductType()</td>
-<td class="failures">0.007s</td>
+<td class="failures">0.009s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -711,7 +711,7 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 </tr>
 <tr>
 <td class="failures">shouldProcessBatchSuccessfully()</td>
-<td class="failures">0.010s</td>
+<td class="failures">0.015s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -719,9 +719,9 @@ Please remove unnecessary stubbings or use 'lenient' strictness. More info: java
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>17:56:43.232 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.246 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Bulk indexing has failures: Bulk indexing failed
-17:56:43.247 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+<pre>13:39:16.656 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.662 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Bulk indexing has failures: Bulk indexing failed
+13:39:16.663 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 java.lang.RuntimeException: Bulk indexing failed
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.executeBulkRequest(ElasticsearchSinkConnector.java:71)
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.processMessages(ElasticsearchSinkConnector.java:58)
@@ -814,7 +814,7 @@ java.lang.RuntimeException: Bulk indexing failed
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.293 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+13:39:16.709 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'invalid': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
  at [Source: (String)&quot;invalid json&quot;; line: 1, column: 8]
 	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2477)
@@ -914,8 +914,8 @@ com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'invalid': was
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.305 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-null
-17:56:43.306 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+13:39:16.721 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-null
+13:39:16.722 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 java.lang.NullPointerException: Cannot invoke &quot;org.elasticsearch.action.bulk.BulkResponse.hasFailures()&quot; because &quot;bulkResponse&quot; is null
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.executeBulkRequest(ElasticsearchSinkConnector.java:69)
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.processMessages(ElasticsearchSinkConnector.java:58)
@@ -1008,7 +1008,7 @@ java.lang.NullPointerException: Cannot invoke &quot;org.elasticsearch.action.bul
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.316 [Test worker] ERROR com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Error processing batch of 1 messages
+13:39:16.731 [Test worker] ERROR c.e.k.c.ElasticsearchSinkConnector - Error processing batch of 1 messages
 java.lang.NullPointerException: Cannot invoke &quot;com.fasterxml.jackson.databind.JsonNode.asText()&quot; because the return value of &quot;com.fasterxml.jackson.databind.JsonNode.get(String)&quot; is null
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnector.processMessages(ElasticsearchSinkConnector.java:43)
 	at com.example.kafkaconnect.connector.ElasticsearchSinkConnectorTest.lambda$shouldHandleMissingProductType$2(ElasticsearchSinkConnectorTest.java:135)
@@ -1100,21 +1100,21 @@ java.lang.NullPointerException: Cannot invoke &quot;com.fasterxml.jackson.databi
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-17:56:43.329 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.333 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.337 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.340 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.343 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.346 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.348 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.350 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.351 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.352 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.353 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 100 documents
-17:56:43.367 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.368 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 2 documents
-17:56:43.387 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Created new index: products-electronics
-17:56:43.388 [Test worker] INFO com.example.kafkaconnect.connector.ElasticsearchSinkConnector -- Successfully indexed 1 documents
+13:39:16.749 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.753 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.757 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.761 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.764 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.767 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.770 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.773 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.775 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.777 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.778 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 100 documents
+13:39:16.798 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.799 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 2 documents
+13:39:16.823 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Created new index: products-electronics
+13:39:16.823 [Test worker] INFO  c.e.k.c.ElasticsearchSinkConnector - Successfully indexed 1 documents
 </pre>
 </span>
 </div>
@@ -1133,7 +1133,7 @@ java.lang.NullPointerException: Cannot invoke &quot;com.fasterxml.jackson.databi
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10</a> at Jan 6, 2025, 5:57:30 PM</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at Jan 19, 2025, 1:39:46 PM</p>
 </div>
 </div>
 </body>
