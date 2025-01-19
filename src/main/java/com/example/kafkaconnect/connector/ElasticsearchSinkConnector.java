@@ -60,7 +60,7 @@ public class ElasticsearchSinkConnector {
                         continue;
                     }
                     
-                    String indexName = "products-" + productType.toLowerCase();
+                    String indexName = "cfp_a_" + productType.toLowerCase();
                     ensureIndexExists(indexName);
                     
                     bulkRequest.add(new IndexRequest(indexName, "_doc")
