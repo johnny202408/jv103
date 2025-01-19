@@ -14,6 +14,7 @@ import org.elasticsearch.common.xcontent.XContentType;
 
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Slf4j
@@ -62,8 +63,9 @@ public class ElasticsearchSinkConnector {
                     String indexName = "products-" + productType.toLowerCase();
                     ensureIndexExists(indexName);
                     
-                    bulkRequest.add(new IndexRequest(indexName)
-                        .source(message, XContentType.JSON));
+                    bulkRequest.add(new IndexRequest(indexName, "_doc")
+                                    .id(UUID.randomUUID().toString())
+                                    .source(message, XContentType.JSON));
                     
                     if (bulkRequest.numberOfActions() >= bulkActions) {
                         executeBulkRequest(bulkRequest);
